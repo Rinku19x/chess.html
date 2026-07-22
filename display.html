@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                border:2px solid black;
+                paddng:20px;
+                margin-bottom:20px;
+            }
+
+            .block-item{
+                display:block;                             
+                background:lightblue;
+                padding:10px;
+                margin-bottom:10px;
+            }
+
+            .inline-item{
+                display:inline;
+                background:yellow;
+                padding:10px;
+                margin-right:10px;
+            }
+
+            .inline-block-item{
+                display:inline-block;
+                background:lightgreen;
+                padding:10px;
+                margin-right:10px;
+                width:100px;
+                textalign:center;
+            }
+
+            .hidden-item{
+                display:none;
+            }
+
+            .flex-container{
+                display:flex;
+                background:#f0f0f0;
+                padding:20px;
+            }
+
+            .grid-container{
+                display:grid;
+                grid-template-columns:repeat(3,1fr);
+                gap:10px;
+                background:#fff5cc;
+                padding:20px;
+            }
+            
+            grd-item{
+                background:#ffcc5b;
+                padding:20px;
+                text-align:center;
+            }
+        </style>
+    </head>
+        <body>
+            <h1>CSS Display Examples</h1>
+
+            <h2>Block</h2>
+            <div class="container">
+                <div class="block-item">Block item 1</div>
+                <div class="block-item">Block item 2</div>
+                <div class="block-item">Block item 3</div>
+            </div>
+
+            <h2>inline<h2>
+                <div class="container">
+                    <span class="inline-item">inline item 1</span>
+                      <span class="inline-item">inline item 2</span>
+                      <span class="inline-item">inline item 3</span>
+                  </div>
+
+                <h2>inline-block</h2>
+                    <span class="inline-block-item"> Box 1</span>
+                    <span class="inline-block-item">Box 2</span>
+                    <span class="inline-block-item">Box 3</span>
+                </div>
+
+                <h2>Hidden(Display:None)</h2>
+                <div class="container">
+                    <div>This is visible</div>
+                    <div class="hidden-item">This is hidden</div>
+                    <div>This is visible</div>
+                </div>
+
+                <h2>flex</h2>
+                <div class="flex-container">
+                    <div>flex item 1</div>
+                    <div>flex item 2</div>
+                    <div>flex item 3</div>
+                </div>
+
+                <h2>grid</h2>
+                <div class="grid-container">
+                    <div class="grid-item">Grid Item 1</div>
+                    <div class="grid-item">Grid Item 2</div>
+                    <div class="grid-item">Grid Item 3</div>
+                </div>
+            
+       </body>
+</html>
