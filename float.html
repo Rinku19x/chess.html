@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                border:2px solid black;
+                padding:20px;
+                width: 400px;
+            }
+
+            .float-left{
+                float:left;
+                width: 100px;
+                background-color: antiquewhite;
+                padding: 10px;
+                margin-bottom:10px;
+                margin-right:10px;
+            }
+
+            .float-right{
+                float:right;
+                width:100px;
+                background-color: lightgreen;
+                padding:10px;
+                margin-bottom:10px;
+                margin-left:10px;
+            }
+
+            .clear{
+                clear:both;
+            }
+        </style>
+    </head>
+            <body>
+
+                    <h1>CSS Float Example</h1>
+
+                <div class="container">
+                <div class="float-left">float left</div>
+                <div class="float-right">float right</div>
+                <p>This text flows around the floated boxes.Lorem ipsum dolor
+                    sit amet,consectetur adipiscing elit
+                </p>
+                <div class="clear"></div><!--clears the float-->
+                <p>This text is rendered after clearing the floats</p>
+                </div>
+            </body>
+</html>
