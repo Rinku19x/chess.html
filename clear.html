@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+                .container{
+                    border:2px solid black;
+                    paddng:20px;
+                    width: 400px;
+                }
+
+                .float-left{
+                    float:left;
+                    width:100px;
+                    background :lightblue;
+                    padding:10px;
+                    margin-bottom:10px;
+                    margin-right:10px;
+                }
+
+                .float-right{
+                    float:right;
+                    width:100ox;
+                    backgound:lightgreen;
+                    padding:10px;
+                    margin-bottom:10px;
+                    margin-left:10px;
+                }
+
+                .clear{
+                    clear:both;
+                    background:#ffcccb;
+                    padding:10px;
+                }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Clear Example</h1>
+        <div class="container">
+            <div class="float-left">float left</div>
+            <div class="float-right">float right</div>
+            <p>This text flows around the floated boxes.Lorem ipsum dolor sit amet,consectetur adipiscing elit</p>
+            <div class="clear">This div clears the floats</div><!--clears the float-->
+            <p>This text is rendered after clearing the floats</p>
+        </div>
+</html>
