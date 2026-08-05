@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                border:2px solid black;
+                padding:20px;
+                width:300px;
+                height:100px;
+                margin-bottom:20px;
+            }
+            
+            .visible{
+                overflow:visible;
+            }
+
+            .hidden{
+                overflow:hidden;
+            }
+
+            .scroll{
+                overflow:scroll;
+            }
+
+            .auto{
+                overflow:auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Overflow Example</h1>
+
+        <h2>visible(default)</h2>
+        <div class="container visible">
+            This bos lets content overflow outside its borders. This box lets content overflow outside its borders.
+        </div>
+
+        <h2>Hidden</h2>
+        <div class="container hidden">
+            This box cuts off overflowing content.
+        </div>
+
+        <h2>Scroll</h2>
+        <div class="container scroll">
+            This box displays a scrollbar when content overflows.
+        </div>
+
+        <h2>Auto</h2>
+        <div class="container auto">
+            This bos shows crollbars only if the content overflows.
+        </div>
+    </body>
+</html>
